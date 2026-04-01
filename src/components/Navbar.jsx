@@ -20,7 +20,7 @@ export default function Navbar() {
           {/* Logo */}
           <NavLink
             to="/"
-            className="group flex items-center gap-3 transition-transform duration-200 active:scale-95"
+            className="group flex items-center gap-3 transition-transform duration-200 "
           >
             <div className="relative flex items-center justify-center">
               <div className="absolute inset-0 bg-indigo-500 blur-md opacity-20 group-hover:opacity-40 transition-opacity"></div>
@@ -32,7 +32,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col leading-none">
               <span className="text-2xl font-black tracking-tight text-gray-900 group-hover:text-indigo-600 transition-colors">
-                ZEN<span className="text-indigo-600">THRIX</span>
+                ZEN<span className="text-indigo-600">THRIXA</span>
               </span>
               <span className="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase mt-0.5">
                 Premium Tech
@@ -124,7 +124,7 @@ export default function Navbar() {
           <NavLink
             to="/"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block py-3 px-4 text-base font-medium text-gray-700 hover:bg-indigo-50 rounded-lg"
+            className="block py-3 px-4 text-base font-medium text-gray-700 hover:bg-indigo-50 rounded-lg "
           >
             Home
           </NavLink>
