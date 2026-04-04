@@ -12,13 +12,16 @@ import Product from './pages/Product'
 import Navbar from './components/Navbar'
 import './App.css'; 
 import Footer from './components/Footer'
+import Searchbar from './components/Searchbar'
 
 const App = () => {
   
   return (
     <div>
-      <Navbar/>
+      <Navbar />
+      <Searchbar/>
 <Routes>
+  
 <Route path='/' element={<Home/>}/>
 <Route path='/about' element={<About/>}/>
 <Route path='/cart' element={<Cart/>}/>

@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { Menu, X, ShoppingCart, Search, User, ChevronDown } from "lucide-react";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import logo from "../assets/logo.png";
+import { ShopContext } from "../context/ShopContext";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+const { search, setSearch, showSearch, setShowSearch } = useContext(ShopContext);
 
   const linkClass = ({ isActive }) =>
     `relative px-3 py-2 text-sm font-medium transition-all duration-200
@@ -59,6 +61,7 @@ export default function Navbar() {
               <Search
                 size={20}
                 className="text-gray-600 cursor-pointer hover:text-indigo-600 transition"
+                onClick={()=>setShowSearch(true)}
               />
 
               {/* Cart */}
